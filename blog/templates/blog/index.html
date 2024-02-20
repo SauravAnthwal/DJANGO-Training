@@ -2,38 +2,86 @@
 {% load static %}
 
 {% block title %}
-Selva's Blog Site
+Saurav's Blog Site
 {% endblock %}
 
 {% block css_files %}
-    <link rel="stylesheet" href="{% static "blog/index.css" %}">
-{% endblock %}
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  #welcome {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  #welcome img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  #welcome h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  #latest-posts {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  #latest-posts h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .about p {
+    font-size: 1.2em;
+  }
+</style>
+{% endblock css_files %}
 
 {% block content %}
 <section id="welcome">
-    <header>
-        <img src="{% static "blog/images/raju.jpg" %}" alt="Selva">
-        <h2>Selva</h2>
-    </header>
-    <p>
-        Hi, I am Selva and I love to cook healthy food
-    </p>
+  <header>
+    <img src="{% static "blog/images/courage.png" %}" alt="Saurav">
+    <h2>Saurav Anthwal</h2>
+  </header>
 </section>
 
 <section id="latest-posts">
-    <h2>My latest posts</h2>
-    <ul>
-        {% include "blog/includes/post.html" %}
-    </ul>
+  <h2>My Latest Reviews on Games</h2>
+  <ul>
+    {% include "blog/includes/post.html" %}
+  </ul>
 </section>
 
 <section class="about">
-    <h2>About Me</h2>
-    <p>
-        I love to write programs and love to cook.
-    </p>
-    <p>
-        My goal is to teach programming and help people with obesity and diabetes.
-    </p>
+  <h2>About Me</h2>
+  <p>I love to play video games (Especially console gaming - Ps5, Nintendo Switch)</p>
 </section>
 {% endblock %}
