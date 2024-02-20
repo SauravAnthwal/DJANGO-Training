@@ -1,0 +1,46 @@
+{% load static %}
+<li>
+    <article class="post">
+        <a href="{% url "single-post-page" slug="zelda" %}"></a>
+        <div class="post__content">
+            <h3>The Legends of Zelda:Tears of the Kingdom Review -</h3>
+            <div class="review-section">
+                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="rating">5/5</span>
+            </div>
+            <p>
+                A literal masterpiece. If I ever got the chance meet the creator of this game, I would give him a million high fives. I
+                just love how you can really let your creative side run free. By using the new abilities, you can build anything you can
+                imagine. Also, the storyline is so compelling. I won't give any spoilers, but I must say that it really does play with
+                your emotions. The cutscenes are pretty darn cinematic for a videogame. In addition, the map is HUGE! It is technically
+                the same map as in Breath of the Wild, but there are so many little changes that it seems almost like a whole new world.
+                There is so much stuff to explore! From equipment to caves to shrines to even the sky, I couldn't possibly see it all!
+                The combat system is also good. The boss battles are never easy, always different, and always make you feel accomplished
+                at the end. I've been going on and on about all this, but I haven't even talked about one of the best parts of the game:
+                puzzles. The puzzles are so well made! Some may seem difficult, but, with hard work(and the internet), you can beat any
+                puzzle! I could go on and on about so many more components of this wonderful game, but then we would be here forever!
+                Overall, this game is 5/5.
+            </p>
+        </div>
+        <img src="{% static "blog/images/zelda.jpeg" %}" alt="Saurav">
+    </article>
+</li>
+
+<style>
+    .review-section {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        color: #FFD700;
+        /* Star color: gold */
+    }
+
+    .stars {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .rating {
+        font-size: 16px;
+    }
+</style>

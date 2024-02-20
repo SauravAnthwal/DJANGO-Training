@@ -1,0 +1,43 @@
+{% load static %}
+<li>
+    <article class="post">
+        <a href="{% url "single-post-page" slug="marvel-spiderman" %}"></a>
+        <div class="post__content">
+            <h3>Marvel Spiderman 2 Review -</h3>
+            <div class="review-section">
+                <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="rating">5/5</span>
+            </div>
+            <p>
+                I say it's the best game and Spider-Man game I've played in a long time it's so good. The symbiote suits
+                attacks/abilities are so good they remind me SO much of Spiderman Web Of Shadows. The bosses are so good
+                and cool, being
+                able to switch back and forth with Peter and Miles, them both having new and good abilities, (SPOILERS)
+                how we got the
+                anti venom suit, and (another SPOILER) how we get to play as Venom but not for that long disappointingly
+                but it was
+                pretty cool. So yes please get this game it will be so worth it.
+            </p>
+        </div>
+        <img src="{% static "blog/images/spiderman2.jpeg" %}" alt="Saurav">
+    </article>
+</li>
+
+<style>
+    .review-section {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        color: #FFD700;
+        /* Star color: gold */
+    }
+
+    .stars {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .rating {
+        font-size: 16px;
+    }
+</style>

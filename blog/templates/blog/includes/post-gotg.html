@@ -1,0 +1,52 @@
+{% load static %}
+<li>
+    <article class="post">
+        <a href="{% url "single-post-page" slug="gotg" %}"></a>
+        <div class="post__content">
+            <h3>Marvel Guardians of the Galaxy Review -</h3>
+            <div class="review-section">
+                <span class="stars">&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="rating">4/5</span>
+            </div>
+            <p>
+                Entertaining game! And hands down, visually (and maybe sounding) the best Marvel video game so far!
+                Excellent balance
+                between shooter, puzzle, comedy, Marvel lore, RPG, story, and strategy! The 80s classic rock Soundtrack
+                is perfect! It is
+                almost like playing a movie, it immerses you into the GotG world with cinematic gameplay brilliance! I
+                wish now all
+                video games follow suit! Like other reviews, it is meant to be a 1 player game, but what if they somehow
+                make a sequel
+                that is split-screen couch co-op? I had give it six stars!! In a strange, own opinion, I feel that you
+                could play this game
+                with the volume cranked up and a crowd watching it and helping you along with the puzzles, dialog
+                choosing, and strategy
+                choices, while enjoying watching this game as it plays out like a soap opera or “dromedy” flick and
+                enjoy the game just
+                as much as the one holding the game controller. Nevertheless, super fun and entertaining to play through
+                once, yet a
+                high re-playability score from me.
+            </p>
+        </div>
+        <img src="{% static "blog/images/gotg.jpeg" %}" alt="Saurav">
+    </article>
+</li>
+
+<style>
+    .review-section {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        color: #FFD700;
+        /* Star color: gold */
+    }
+
+    .stars {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .rating {
+        font-size: 16px;
+    }
+</style>

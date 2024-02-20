@@ -1,0 +1,44 @@
+{% load static %}
+<li>
+    <article class="post">
+        <a href="{% url "single-post-page" slug="gow5" %}"></a>
+        <div class="post__content">
+            <h3>God of War Ragnarok Review -</h3>
+            <div class="review-section">
+                <span class="stars">&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="rating">4/5</span>
+            </div>
+            <p>
+                The game is perfect, the combat has been perfected with many different mobs to fight within their respective realms as
+                well as the innumerable amount of mini-bosses, bosses, and side bosses. The story as well is unparalleled, there are
+                virtually no plot holes, and it takes a lot from Norse mythology and other neighboring mythologies/legends. Every
+                character has been developed to the point where it makes the game feel so surreal. The fact that the game is so amazing
+                just makes me want to think that God of War (2018) was simply the prequel and building block to this amazing game. They
+                quite literally made everything so much better compared to the 2018 game. All the issues with God of War were fixed and
+                amplified in God of War: Ragnarök. The game immersion as well is so much better than any other story game I've ever
+                played, and I had thought God of War's immersion was amazing. In the end, I have no complaints or problems with this
+                game because in my books, this is the best game I have ever played.
+            </p>
+        </div>
+        <img src="{% static "blog/images/gow.jpeg" %}" alt="Saurav">
+    </article>
+</li>
+
+<style>
+    .review-section {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        color: #FFD700;
+        /* Star color: gold */
+    }
+
+    .stars {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .rating {
+        font-size: 16px;
+    }
+</style>
